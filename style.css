@@ -24,13 +24,8 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.navigation-links ul{
-    list-style: none;
-}
-.navigation-links ul li{
-    display: inline-block;
-    line-height: 60px;
-    margin: 0 5px;
+.navigation-bar .fa-bars{
+    display: none;
 }
 .nav-item{
     text-decoration: none;
@@ -165,7 +160,7 @@ header{
 .newsletter-top h1{
     font-size: 36px;
 }
-.newsletter-top h3{
+.newsletter-top p{
     margin-top: -30px;
 }
 .newsletter-input{
@@ -225,12 +220,16 @@ header{
         padding-bottom: 86px;
     }
     /* Navigation Bar */
-    .navigation-bar{
-        display: block;
+    /* আমাদের নেভিগেশন মেনুতে ক্লিক করলে রেসপন্স করার পদ্ধতি শেখানো হয়নি তাই মেনু আইকনে ক্লিক করলে মেনু অপশন দেখাতে পারিনি G*/
+    .nav-item{
+        display: none;
     }
-    .navigation-links ul li{
-        display: block;
+    .navigation-bar .fa-bars{
+        display: inline-block;
+        color: white;
+        font-size: 24px;
     }
+
     /* Title Section */
     .title-section{
         display: block;
@@ -258,6 +257,7 @@ header{
         margin-right: 15px;
         grid-template-columns: repeat(1, 1fr);
     }
+    /* Highlights Section */
     .highlights-section{
         margin-top: 60px;
         padding-left: 15px;
@@ -293,4 +293,103 @@ header{
         width: 370px;
         height: 260px;
     }
+    /* Newsletter Section */
+    .newsletter-top h1{
+        font-size: 26px;
+    }
+    .newsletter-top p{
+        font-size: 14px;
+    }
+    #email{
+        padding-left: 10px;
+        height: 35px;
+        width: 200px;
+    }
+    /* Footer Section */
+    .footer-section{
+        padding-top: 54px;
+        background-image: none;
+    }
+    
+    .footer-logo img{
+        width: 330px;
+        height: 90px;
+    }
+}
+/* For Tablet Device */
+@media only screen and (min-width:689px) and (max-width:992px){
+    header{
+        padding-top: 36px;
+        padding-left: 16px;
+        padding-right: 21px;
+        padding-bottom: 86px;
+    }
+    .nav-item{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Title Section */
+    .title{
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .watch-live-buttton{
+        margin-top: 30px;
+    }
+    .banner-image{
+        margin-top: 50px;
+    }
+    .banner-image img{
+        width: 329px;
+        height: 259.17px;
+    }
+    /* Players Section */
+    .players-section{
+        margin-top: 47px;
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Highlights Section */
+    .highlights-section{
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 16px;
+    }
+    .highlights-title{
+        width: 329px;
+        height: 299px;
+    }
+    .highlights-title h1{
+        font-size: 30px;
+        width: 292px;
+        height: 80px;
+    }
+    .watch-now-button{
+        margin-top: 24px;
+    }
+    .highlights-banner img{
+        margin-top: 29px;
+        width: 328px;
+        height: 248px;
+    }
+       /* Gallery Section */
+    .gallery-section{
+        padding: 15px;
+    }
+    .photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photos img {
+        width: 370px;
+        height: 260px;
+    }
+        /* Footer Section */
+        .footer-section{
+            margin-top: -120px;
+            background-image: none;
+        }
 }
