@@ -1,0 +1,73 @@
+/* -----------
+    Body Style 
+--------------- */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------
+    Header Style 
+----------------*/
+header{
+
+    padding-top: 42px;
+    padding-left: 156px;
+    padding-right: 123px;
+    padding-bottom: 86px;
+    background-color: blue;
+}
+/* Navigation Bar */
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    text-decoration: none;
+    color: white;
+    padding-left: 36px;
+    font-size: 16px;
+}
+
+.login a, .watch-live-buttton a{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 1.5s;
+    font-size: 16px;
+}
+.login, .watch-live-buttton {
+    transition: transform 1s;
+}
+.login a:hover, .watch-live-buttton a:hover{
+    background-color: tomato;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+.watch-live-buttton:hover{
+    transform: scale(1.1) translateX(10px);
+}
+.watch-live-buttton{
+    margin-top: 27px;
+}
+/* Title Section */
+.title-section{
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+}
+.title{
+    Width: 485px;
+    Height: 230px;
+    font-size: 64px;
+    color: white;
+}
