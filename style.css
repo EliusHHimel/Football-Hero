@@ -31,7 +31,7 @@ header{
     font-size: 16px;
 }
 
-.login a, .watch-live-buttton a{
+.login a, .watch-live-buttton a, .highlights-title a{
     text-decoration: none;
     color: white;
     background-color: #E02C6D;
@@ -40,20 +40,20 @@ header{
     transition: background-color 1.5s;
     font-size: 16px;
 }
-.login, .watch-live-buttton {
+.login, .watch-live-buttton, .watch-now-button {
     transition: transform 1s;
 }
-.login a:hover, .watch-live-buttton a:hover{
+.login a:hover, .watch-live-buttton a:hover, .watch-now-button a:hover{
     background-color: tomato;
 }
 .login:hover{
     transform: scale(1.1);
 }
-.watch-live-buttton:hover{
+.watch-live-buttton:hover, .watch-now-button:hover{
     transform: scale(1.1) translateX(10px);
 }
 .watch-live-buttton{
-    margin-top: 27px;
+    margin-top: 70px;
 }
 /* Title Section */
 .title-section{
@@ -70,4 +70,54 @@ header{
     Height: 230px;
     font-size: 64px;
     color: white;
+}
+/* Players Section */
+.players-section{
+    margin-top: 70px;
+    margin-left: 180px;
+    margin-right: 210px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+.player p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Highlights Section */
+.highlights-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 165px;
+    padding-left: 182px;
+    padding-right: 156px;
+}
+.highlights-title{
+    width: 466px;
+    height: 309px;
+}
+.highlights-title h1{
+    width: 466px;
+    height: 120px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.highlights-banner img{
+    width: 567px;
+    height: 427px;
 }
