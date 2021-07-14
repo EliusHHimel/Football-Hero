@@ -24,11 +24,24 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.navigation-links ul{
+    list-style: none;
+}
+.navigation-links ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
 .nav-item{
     text-decoration: none;
     color: white;
-    padding-left: 36px;
+    padding: 8px 20px;
     font-size: 16px;
+    transition: 1s;
+}
+
+.nav-item:hover{
+    background-color: #00428081;
 }
 
 .login a, .watch-live-buttton a, .highlights-title a{
@@ -202,3 +215,82 @@ header{
     width: 32px;
 }
 /* Responsive Style using Media Query */
+/* Mobile Device */
+@media only screen and (max-width: 688px) {
+    /* Header */
+    header{
+        padding-top: 36px;
+        padding-left: 16px;
+        padding-right: 21px;
+        padding-bottom: 86px;
+    }
+    /* Navigation Bar */
+    .navigation-bar{
+        display: block;
+    }
+    .navigation-links ul li{
+        display: block;
+    }
+    /* Title Section */
+    .title-section{
+        display: block;
+    }
+    .title{
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .watch-live-buttton{
+        margin-top: 30px;
+    }
+    .banner-image{
+        margin-top: 50px;
+    }
+    .banner-image img{
+        width: 329px;
+        height: 259.17px;
+    }
+    /* Players Section */
+    .players-section{
+        margin-top: 47px;
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-section{
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 16px;
+        display: block;
+    }
+    .highlights-title{
+        width: 329px;
+        height: 299px;
+    }
+    .highlights-title h1{
+        font-size: 30px;
+        width: 292px;
+        height: 80px;
+    }
+    .watch-now-button{
+        margin-top: 24px;
+    }
+    .highlights-banner img{
+        margin-top: 29px;
+        width: 328px;
+        height: 248px;
+    }
+    /* Gallery Section */
+    .gallery-section{
+        padding: 15px;
+    }
+    .photos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+    .photos img {
+        width: 370px;
+        height: 260px;
+    }
+}
