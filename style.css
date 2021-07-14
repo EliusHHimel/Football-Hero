@@ -121,3 +121,84 @@ header{
     width: 567px;
     height: 427px;
 }
+/* Gallery Section */
+.gallery-section{
+    padding: 50px;
+}
+.gallery-title{
+    font-size: 30px;
+    color: rgb(3, 86, 155);
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+.photo{
+    overflow: hidden;
+}
+.photos img {
+    width: 470px;
+    height: 360px;
+    transition: transform 1.5s;
+}
+.photos img:hover{
+    transform: scale(1.15);
+    
+}
+/* Newsletter Subscription */
+
+.newsletter-top h1{
+    font-size: 36px;
+}
+.newsletter-top h3{
+    margin-top: -30px;
+}
+.newsletter-input{
+    display: flex;
+    justify-content: center;
+}
+#email{
+    padding-left: 10px;
+    height: 35px;
+    width: 250px;
+}
+#email:focus{
+    font-size: 16px;
+    color: rgb(199, 5, 63);
+}
+.submit-button{
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    padding: 12px 33px;
+    background-color: #e60045;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+    transition: 1s;
+}
+.submit-button:hover{
+    background-color: #8e04c4;
+    transform: scale(1.1) ;
+}
+/* Footer Section */
+.footer-section{
+    margin-top: 20px;
+    padding-top: 217px;
+    padding-bottom: 30px;
+    background-image: url(images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-media img{
+    height: 32px;
+    width: 32px;
+}
+/* Responsive Style using Media Query */
